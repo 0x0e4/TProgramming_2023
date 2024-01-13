@@ -1,0 +1,27 @@
+lint_saga:
+  image: node
+  tags:
+    - docker
+  stage: lint_saga
+  script:
+    - cd ./rpgsaga/saga
+    - npm ci
+    - npm run lint
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      changes:
+        - rpgsaga/**/*
+
+test_saga:
+  image: node
+  tags:
+    - docker
+  stage: lint_saga
+  script:
+    - cd ./rpgsaga/saga
+    - npm ci
+    - npm run test
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      changes:
+        - rpgsaga/**/*

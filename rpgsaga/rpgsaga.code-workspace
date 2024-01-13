@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "Configs (Root)",
+			"path": "."
+		},
+		{
+			"name": "Saga",
+			"path": "saga"
+		},
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/node_modules": true,
+			"**/build": true,
+			"**/dist": true
+		},
+		"editor.detectIndentation": false,
+		"editor.tabSize": 4,
+	}
+}

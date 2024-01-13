@@ -1,0 +1,9 @@
+stages:
+  - lint_saga
+  - test_saga
+  - lint_shop
+  - test_shop
+
+include:
+  - local: /rpgsaga/.gitlab-ci.yml
+  - local: /onlineshop/.gitlab-ci.yml

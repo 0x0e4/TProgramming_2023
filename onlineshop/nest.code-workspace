@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"name": "Server",
+			"path": "packages/server"
+		},
+		{
+			"name": "Client",
+			"path": "packages/client"
+		},
+		{
+			"name": "Configs (Root)",
+			"path": "."
+		},
+		
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/node_modules": true,
+			"**/build": true,
+			"**/dist": true
+		},
+		"editor.detectIndentation": false,
+		"editor.tabSize": 4,
+	}
+}
